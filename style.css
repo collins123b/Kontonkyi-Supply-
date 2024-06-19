@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0288d1;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+main {
+    padding: 1em;
+}
+
+#upload-section, #product-list-section {
+    margin-bottom: 2em;
+}
+
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#upload-form label {
+    font-weight: bold;
+}
+
+#upload-form input, #upload-form textarea, #upload-form button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#upload-form button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    transition: background-color 0.3s;
+}
+
+#upload-form button:hover {
+    background-color: #0277bd;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    width: calc(33% - 2em);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#search-bar {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4081;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
